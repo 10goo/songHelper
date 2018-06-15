@@ -1,0 +1,11 @@
+<div *ngIf="song" class="song">
+  <div *ngIf="currentSlide" class="slide">
+    <div class="chords">
+      {{currentSlide.chords}}
+    </div>
+    <div class="lyrics">
+      {{currentSlide.lyrics}}
+    </div>
+  </div>
+</div>
+<button (click)="playSong(0)">Play</button>
